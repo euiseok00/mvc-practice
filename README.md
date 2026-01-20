@@ -12,6 +12,7 @@
 
   - 1.2 프레임워크 환경 설정
 - Spring MVC 환경설정 및 기본 API PING 테스트(진행)
+  > ping 테스트는 정상적으로 진행, 코드 오류 해결 필요 
 - Datasource 설정 및 MyBatis 연동 작업(진행)
 
 2. 기타 업무 및 학습
