@@ -11,21 +11,23 @@
 - DBeaver 설치 및 MariaDB Connection 연동 테스트(완료)
 
   - 1.2 프레임워크 환경 설정
-- Spring MVC 환경설정 및 기본 API PING 테스트(진행)
-  > ping 테스트는 정상적으로 진행, 코드 에러 해결 필요 
+- Spring MVC 환경설정 및 기본 API PING 테스트(완료)
 
 <img width="560" height="232" alt="스크린샷 2026-01-20 235121" src="https://github.com/user-attachments/assets/a0802b21-7ec0-4045-b65c-a96facec7e49" />
 
-- Datasource 설정 및 MyBatis 연동 작업(진행)
+- 1.3 Datasource 설정 및 MyBatis 연동 작업(진행)
+
+<img width="815" height="259" alt="스크린샷 2026-01-21 175219" src="https://github.com/user-attachments/assets/b3d83a93-34b7-40b4-8d6e-379cd727a15b" />
+
 
 2. 기타 업무 및 학습
    
    - 2.1 협업 도구 활용
 - GitHub 개인 계정 생성 및 리포지토리 구성(완료)
-- Git 기본 명령어 및 버전 관리 사용 방법 숙지(진행)
+- Git 기본 명령어 및 버전 관리 사용 방법 숙지(완료)
 
 3. 수행 현황 요약
 - 업무 시간: 총 2시간 진행
-- 완료 항목: 1.1, 1.2, 1.5 (일부)
-- 진행 항목: 1.3, 1.4
-- 목표 달성률: 현재까지 50% 달성
+- 완료 항목: 1.1, 1.2, 2.1 
+- 진행 항목: 1.3 // /resources/ 에러 해결해야함 
+- 목표 달성률: 현재까지 90% 달성
