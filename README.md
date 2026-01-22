@@ -27,7 +27,29 @@
 - Git 기본 명령어 및 버전 관리 사용 방법 숙지(완료)
 
 3. 수행 현황 요약
-- 업무 시간: 총 4시간 진행
 - 완료 항목: 1.1, 1.2, 2.1 
 - 진행 항목: 1.3 // /resources/ 에러 해결해야함 
 - 목표 달성률: 현재까지 90% 달성
+
+4. 질문사항
+- 4.1
+: 아래 코드에 대한 Cannot resolve location 에러를 어떻게 해결방법에 대한 질문입니다.
+에러가 떠도 ping 테스트 및 mybatis 연동 후 구동 테스트는 잘 되는데 이 단계에서는 의도된 것인지 수정해야 할 부분이 있는지 궁금합니다! 
+
+       <mvc:resources mapping="/resources/**" location="/resources/" />
+
+  - 4.1.1 원인 파악
+- 현재 src/main/webapp 디렉토리 하위에 resources 폴더가 존재하지 않음
+- Spring이 정적 리소스를 찾을 영역이 실제 경로와 일치하지 않아 발생하는 문제로 파악됨
+
+   - 4.1.2 해결 방안 고민
+- resources 폴더를 webapp의 하위 폴더에 위치시키려 했으니 멘토님께서 제시하신 최종 폴더 구조와 달라져서 보류
+- 경로 설정 변경 1. classpath:/resources/ 2. /WEB-INF/../resources/ -> 변경 후에도 에러 유지
+
+- 4.2 
+: 1.3 결과의 소스 데이터를 멘토님이 제시하신 결과를 보고 제가 로컬 mariadb에 쿼리문으로 일일히 insert 하였는데 의도하신 방법이 맞는지 궁금합니다. 아니라면 어떤 방법을 의도하셨는지도 궁금합니다!
+
+<img width="625" height="203" alt="image" src="https://github.com/user-attachments/assets/69a0e82f-2ac1-465b-8026-c278f7fe1c6a" />
+
+
+
