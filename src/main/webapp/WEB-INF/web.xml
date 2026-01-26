@@ -2,6 +2,10 @@
 <web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee https://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <!--
+  DispatcherServlet 설정 : 모든 웹 요청을 가장 먼저 받아서 컨트롤러로 뿌려줌
+  contextConfigLocation : Spring 설정 파일의 위치 지정
+  -->
   <servlet>
     <servlet-name>spring</servlet-name>
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
@@ -11,11 +15,16 @@
     </init-param>
     <load-on-startup>1</load-on-startup>
   </servlet>
+  <!--
+  서블릿 매핑
+  url-pattern : 들어오는 모든 요청을 위에서 정의한 spring 서블릿이 처리
+   -->
   <servlet-mapping>
     <servlet-name>spring</servlet-name>
     <url-pattern>/</url-pattern>
   </servlet-mapping>
 
+  <!-- 인코딩 필터 -->
   <filter>
     <filter-name>encodingFilter</filter-name>
     <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
@@ -29,3 +38,6 @@
     <url-pattern>/*</url-pattern>
   </filter-mapping>
 </web-app>
+
+        <!-- 전체 동작 흐름
+         1. 사용자 요청 > 2. filter > 3. DispatcherServlet > 4. 설정 참조 -->

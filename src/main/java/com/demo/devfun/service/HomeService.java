@@ -8,9 +8,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+// 이 클래스가 비지니스 로직을 담당하는 서비스 레이어임을 선언
 @Service
 public class HomeService {
 
+    // 데이터베이스에 직접 가서 게이터를 가져올 수 있는 HomeDao 주입받음
     @Autowired
     HomeDao homeDao;
 
