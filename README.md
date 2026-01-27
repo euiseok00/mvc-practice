@@ -115,4 +115,6 @@
 
 -- API 설계서 -- 
 
+[인터페이스_가이드_ 문서_정의석.pdf](https://github.com/user-attachments/files/24884146/_._._.pdf)
+
 
